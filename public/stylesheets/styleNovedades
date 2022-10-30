@@ -1,0 +1,33 @@
+.fila {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.fila p {
+  font-size: 15px;
+  margin-right: 7px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.boton_cerrar {
+  display: flex;
+  text-decoration: none;
+  background-color: #66447a;
+  color: white;
+  font-size: 13px;
+  padding: 7px;
+  border-radius: 5px;
+  width: 125px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.boton_cerrar:hover {
+  background-color: #f2e9f8;
+  color: #66447a;
+  font-weight: bolder;
+  border: solid #66447a 1px;
+}

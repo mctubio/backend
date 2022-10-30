@@ -1,0 +1,36 @@
+.boton_ingresar {
+  background-color: #66447a;
+  color: white;
+  font-size: 15px;
+  border: none;
+  padding: 8px;
+  border-radius: 10%;
+  display: flex;
+
+}
+
+.contenedor_login {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-top: 30px;
+  margin-bottom: 50px;
+  background-color: #9968b647;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-radius: 20px;
+  flex-wrap: wrap;
+}
+
+.campo {
+  width: 480px;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: larger;
+    font-weight: bolder;
+}
