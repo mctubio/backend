@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="/stylesheets/styleNovedades.css" />
+
+<div class="contenedor_Form">
+  <div class="row">
+    <div class="col-6 offset-3">
+      <h4 style="padding-top: 10px;">Modificar la noticia</h4>
+      <form action="/admin/novedades/modificar" method="post" enctype="multipart/form-data">
+        <input type="hidden" value="{{novedad.id}}" name="id" />
+        <div class="mb-3 row">
+          <label for="">Título</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Título"
+            name="titulo"
+            value="{{novedad.titulo}}"
+          />
+        </div>
+        <div class="mb-3 row">
+          <label for="">Subtítulo</label>
+          <textarea
+            type="text"
+            class="form-control subtitulo"
+            placeholder="Subtítulo"
+            name="subtitulo"
+          >{{novedad.subtitulo}}</textarea>
+        </div>
+        <div class="mb-3 row">
+          <label for="">Cuerpo de la noticia</label>
+          <textarea
+            type="text"
+            class="form-control cuerpo"
+            placeholder="Cuerpo"
+            name="cuerpo"
+          >{{novedad.cuerpo}}</textarea>
+        </div>
+        <div class="mb-3 row">
+          <label>Imagen:
+            <input
+              type="file"
+              class="form-control"
+              name="imagen"
+              id="imagen"
+            /></label>
+            <label> <input type="checkbox" name="img_delete" id="img_delete" value="1">¿Eliminar la imagen actual?</label>
+            <input type="hidden" name="img_original" value="{{novedad.img_id}}">
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <button type="submit" class="boton">Guardar</button>
+        </div>
+      </form>
+      {{#if error}}
+        <p class="errorP">{{message}}</p>
+      {{/if}}
+    </div>
+  </div>
+</div>

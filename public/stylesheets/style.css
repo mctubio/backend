@@ -54,4 +54,15 @@ footer p {
   font-size: 12px;
 }
 
+.errorP{
+  background-color: yellow;
+  height: ;
+  padding: 5px 0;
+  font-size: 20px;
+  color: red;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
 

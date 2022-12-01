@@ -9,7 +9,7 @@
 
 }
 
-.contenedor_login {
+.contenedor_Form {
   max-width: 600px;
   margin: 0 auto;
   margin-top: 50px;
@@ -25,12 +25,4 @@
 
 .campo {
   width: 480px;
-}
-
-p{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    font-size: larger;
-    font-weight: bolder;
 }
